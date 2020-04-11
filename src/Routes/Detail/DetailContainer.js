@@ -1,5 +1,5 @@
 import React from "react";
-import DetailContainer from "./DetailContainer";
+import DetailPresenter from "./DetailPresenter";
 
 export default class extends React.Component {
   state = {
@@ -8,8 +8,23 @@ export default class extends React.Component {
     error: null
   };
 
+  async componentDidMount() {
+    const {
+      match: {
+        params: { id }
+      },
+      history: { push }
+    } = this.props;
+    console.log(this.props);
+
+    const parsedId = parseInt(id);
+    if (isNaN(parsedId)) {
+      return push("/");
+    }
+  }
+
   render() {
     const { result, loading, error } = this.state;
-    return <DetailContainer result={result} loading={loading} error={error} />;
+    return <DetailPresenter result={result} loading={loading} error={error} />;
   }
 }
