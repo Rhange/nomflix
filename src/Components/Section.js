@@ -18,6 +18,9 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 125px);
   grid-gap: 25px;
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    justify-content: center;
+  }
 `;
 
 const Section = ({ title, children }) => (

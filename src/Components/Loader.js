@@ -7,13 +7,13 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   font-size: 32px;
-  margin-top: 20px;
+  margin-top: 35vh;
 `;
 
 export default () => (
   <Container>
     <span role="img" aria-label="Loading">
-      ⏰
+      ⏰ Loading...
     </span>
   </Container>
 );
