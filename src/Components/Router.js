@@ -11,6 +11,7 @@ import Home from "Routes/Home";
 import Search from "Routes/Search";
 import TV from "Routes/TV";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
 	<Router>
 		<Header />

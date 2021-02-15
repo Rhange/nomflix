@@ -1,7 +1,8 @@
-import React from 'react';
-import DetailPresenter from './DetailPresenter';
-import { tvApi, movieApi } from 'api';
+import React from "react";
+import DetailPresenter from "./DetailPresenter";
+import { tvApi, movieApi } from "api";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default class extends React.Component {
 	constructor(props) {
 		super(props);
@@ -12,7 +13,7 @@ export default class extends React.Component {
 			result: null,
 			loading: true,
 			error: null,
-			isMovie: pathname.includes('/movie/'),
+			isMovie: pathname.includes("/movie/"),
 		};
 	}
 
@@ -28,7 +29,7 @@ export default class extends React.Component {
 
 		const parsedId = parseInt(id);
 		if (isNaN(parsedId)) {
-			return push('/');
+			return push("/");
 		}
 
 		let result = null;
