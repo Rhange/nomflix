@@ -28,3 +28,7 @@ Learning React and ES6 by building a Movie Discovery App.
 - [ ] /collections Route
 - [ ] On TV show, show 'seasons' and 'creators'
 - [ ] Networks
+
+# Preview:
+
+Try it on [netlify](https://master--rhange.netlify.app/#)
